@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="contact.css">
+    <script src="https://kit.fontawesome.com/ffceb19e75.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <h1>RuBEBE Store</h1>
+            <li><a href="./index.html" target="_blank">About</a></li>
+            <li><a href="./donut.html" target="_blank">Donuts</a></li>
+            <li><a href="./order.html" target="_blank">Order</a></li>
+            <li><a href="./store.html" target="_blank">Stores</a></li>
+            <li><a href="./contact.html" target="_blank">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div>
+        <br><br>
+      <form class="contact-form" onsubmit="sendEmail(); return false;">
+        <input type="text" id="name" class="contact-form-text" placeholder="Your name">
+        <input type="email" id="email" class="contact-form-text" placeholder="Your email">
+        <input type="text" id="phone" class="contact-form-text" placeholder="Your phone">
+        <textarea id="message" class="contact-form-text" placeholder="Your message"></textarea>
+        <input type="submit" class="contact-form-btn" value="Send">
+      </form>
+    </div>
+    </div>
+
+    <div>
+        <footer class="footer-section">
+            <a name="contact"></a>
+            <h3>Contact</h3>
+            <div class="footer-container">
+                <p class="email">navacilla.rubelyn23@gmail.com</p>
+                <div class="social-container">
+                    <div class="social">
+                        <i class="fab fa-instagram-square fa-3x"></i>
+                    </div>
+                    <div class="social">
+                        <i class="fab fa-facebook-square fa-3x"></i>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="contact.js"></script>
+</body>
+
+</html>

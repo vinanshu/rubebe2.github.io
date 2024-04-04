@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donut</title>
+    <script src="https://kit.fontawesome.com/ffceb19e75.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="donut.css">
+</head>
+
+<body>
+        <a name="top"></a>
+        <nav>
+            <ul>
+                <h1>RuBEBE Store</h1>
+                <li><a href="./index.html" target="_blank">About</a></li>
+                <li><a href="./donut.html" target="_blank">Donuts</a></li>
+                <li><a href="./order.html" target="_blank">Order</a></li>
+                <li><a href="./store.html" target="_blank">Stores</a></li>
+                <li><a href="./contact.html" target="_blank">Contact</a></li>
+            </ul>
+        </nav>
+
+    <div>
+        <section class="donut-section">
+            <div>
+                <div id="confirm">
+                    <button onclick="confirmOrder()">Confirm Orders</button>
+                </div>
+                <div id="ordersSummary" style="font-size: 20px; color:rgb(207, 19, 107)"></div>
+            </div>
+            <a name="donut"></a>
+            <h3 class="section-title">Donuts</h3>
+            <div class="image-container">
+                <div class="donut-none">
+                    <li class="name">alcapone donut <br>₱30</li>
+                    <li class="name">munchkin <br>₱30</li>
+                    <li class="name">trio donut <br>₱60</li>
+                </div>
+                <div class="row1">
+                    <div class="grid-item" id="one" style="cursor:pointer;" onclick="order('alcapone donut', '30.00')"></div>
+                    <div class="grid-item" id="two" style="cursor:pointer;" onclick="order('munchkin', '30.00')"></div>
+                    <div class="grid-item" id="three" style="cursor:pointer;" onclick="order('trio donut', '60.00')"></div>
+                </div>
+
+                <div class="donut-none1">
+                    <li class="name1">chocolate donut <br>₱20</li>
+                    <li class="name1">strawberry donut <br>₱50</li>
+                    <li class="name1">sprinkles donut <br>₱20</li>
+                </div>
+                <div class="row2">
+                    <div class="grid-item" id="four" style="cursor:pointer;" onclick="order('chocolate donut', '20.00')"></div>
+                    <div class="grid-item" id="five" style="cursor:pointer;" onclick="order('strawberry donut', '50.00')"></div>
+                    <div class="grid-item" id="six" style="cursor:pointer;" onclick="order('sprinkles donut', '20.00')"></div>
+                </div>
+
+                <div class="donut-none">
+                    <li class="name">glaze donut <br>₱30</li>
+                    <li class="name">ube donut <br>₱35</li>
+                    <li class="name">macha donut <br>₱50</li>
+                </div>
+                <div class="row3">
+                    <div class="grid-item" id="seven" style="cursor:pointer;" onclick="order('glaze donut', '30.00')"></div>
+                    <div class="grid-item" id="eight" style="cursor:pointer;" onclick="order('ube donut', '35.00')"></div>
+                    <div class="grid-item" id="nine" style="cursor:pointer;" onclick="order('macha donut', '50.00')"></div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="donut.js"></script>
+</body>
+
+</html>
